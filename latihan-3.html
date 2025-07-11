@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 3 AJAX</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="my-4 text-center">Simple Store</h1>
+      <form id="search-form">
+        <input
+          type="text"
+          class="form-control mb-3"
+          placeholder="Search for a product..."
+          id="searchInput"
+        />
+        <select class="form-select mb-3" id="categorySelect">
+          <option value="">All Categories</option>
+          <!-- dynamically fill categories -->
+        </select>
+        <input class="form-control mb-5" type="submit" value="Search" />
+      </form>
+      <div class="row" id="productContainer">
+        <!-- dynamically fill products -->
+      </div>
+    </div>
+
+    <style>
+      .card > img {
+        height: 50%;
+        width: 50%;
+      }
+    </style>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="latihan-3.js"></script>
+  </body>
+</html>
